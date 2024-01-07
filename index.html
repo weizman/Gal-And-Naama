@@ -19,43 +19,49 @@
             font-family: Arial, sans-serif;
         }
         #content {
-            max-width: 100%;
+            overflow: hidden;
+            margin: auto;
             text-align: center;
-            padding: 20px;
+            display: table;
+
+            align-items: center;
         }
         .event {
             padding-right: 60px;
             width: 80px;
             height: auto;
         }
+        .inner {
+            float: left;
+        }
         a {
             text-decoration: none;
         }
     </style>
 </head>
-<body>
+<body id="body" onload="body.style.width = innerWidth" style="width: 100%">
+<img id="main" src="wedding.jpg" />
 <div id="content">
-    <span>
+    <div class="inner">
         <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20240604T170000Z%2F20240605T010000Z&details=%D7%97%D7%AA%D7%95%D7%A0%D7%94%20%D7%92%D7%9C%20%D7%95%D7%A0%D7%A2%D7%9E%D7%94%20%0Ahttps%3A%2F%2Fmaps.app.goo.gl%2FbrBGkzNSNciJ9pjB7&location=https%3A%2F%2Fmaps.app.goo.gl%2FbrBGkzNSNciJ9pjB7&text=%D7%97%D7%AA%D7%95%D7%A0%D7%94%20%D7%92%D7%9C%20%D7%95%D7%A0%D7%A2%D7%9E%D7%94">
-        <img class="event" src="https://stripo-cdn.stripo.email/img/front/google-calendar.svg" />
-    </a>
-    </span>
-    <span>
+            <img class="event" src="https://stripo-cdn.stripo.email/img/front/google-calendar.svg" />
+        </a>
+    </div>
+    <div class="inner">
         <a href="https://calendar.yahoo.com/?desc=%D7%97%D7%AA%D7%95%D7%A0%D7%94%20%D7%92%D7%9C%20%D7%95%D7%A0%D7%A2%D7%9E%D7%94%20%0Ahttps%3A%2F%2Fmaps.app.goo.gl%2FbrBGkzNSNciJ9pjB7&dur=false&et=20240605T010000Z&in_loc=https%3A%2F%2Fmaps.app.goo.gl%2FbrBGkzNSNciJ9pjB7&st=20240604T170000Z&title=%D7%97%D7%AA%D7%95%D7%A0%D7%94%20%D7%92%D7%9C%20%D7%95%D7%A0%D7%A2%D7%9E%D7%94&v=60">
-        <img class="event" src="https://stripo-cdn.stripo.email/img/front/yahoo-calendar.svg" />
-    </a>
-    </span>
-    <span>
+            <img class="event" src="https://stripo-cdn.stripo.email/img/front/yahoo-calendar.svg" />
+        </a>
+    </div>
+    <div class="inner">
         <a href="https://outlook.live.com/calendar/0/deeplink/compose?allday=false&body=%D7%97%D7%AA%D7%95%D7%A0%D7%94%20%D7%92%D7%9C%20%D7%95%D7%A0%D7%A2%D7%9E%D7%94%20%0Ahttps%3A%2F%2Fmaps.app.goo.gl%2FbrBGkzNSNciJ9pjB7&enddt=2024-06-05T04%3A00%3A00&location=https%3A%2F%2Fmaps.app.goo.gl%2FbrBGkzNSNciJ9pjB7&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2024-06-04T20%3A00%3A00&subject=%D7%97%D7%AA%D7%95%D7%A0%D7%94%20%D7%92%D7%9C%20%D7%95%D7%A0%D7%A2%D7%9E%D7%94">
-        <img class="event" src="https://stripo-cdn.stripo.email/img/front/outlook-calendar.svg" />
-    </a>
-    </span>
-    <span>
+            <img class="event" src="https://stripo-cdn.stripo.email/img/front/outlook-calendar.svg" />
+        </a>
+    </div>
+    <div class="inner">
         <a href="https://calendar.aol.com/?desc=%D7%97%D7%AA%D7%95%D7%A0%D7%94%20%D7%92%D7%9C%20%D7%95%D7%A0%D7%A2%D7%9E%D7%94%20%0Ahttps%3A%2F%2Fmaps.app.goo.gl%2FbrBGkzNSNciJ9pjB7&dur=false&et=20240605T010000Z&in_loc=https%3A%2F%2Fmaps.app.goo.gl%2FbrBGkzNSNciJ9pjB7&st=20240604T170000Z&title=%D7%97%D7%AA%D7%95%D7%A0%D7%94%20%D7%92%D7%9C%20%D7%95%D7%A0%D7%A2%D7%9E%D7%94&v=60">
-        <img class="event" src="https://stripo-cdn.stripo.email/img/front/aol-calendar.svg" />
-    </a>
-    </span>
-    <img id="main" src="wedding.jpg" />
+            <img class="event" src="https://stripo-cdn.stripo.email/img/front/aol-calendar.svg" />
+        </a>
+    </div>
 </div>
 </body>
 </html>
